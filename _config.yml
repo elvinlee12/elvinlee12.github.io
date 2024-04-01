@@ -1,10 +1,7 @@
 title:  Elvin Lee # your name (or website title) here
 logo: "/images/headshot.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Edit these links below   
-  <br>
-  in _config.yml 
-  <br><br>
+ <br>
   <a href="https://www.linkedin.com/in/elvinlee1/">LinkedIn</a> 
   <br>
   <a href="images/resume.pdf" class="btn btn--info">Resume</a>  
