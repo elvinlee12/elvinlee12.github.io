@@ -53,7 +53,7 @@ _**[Some personal project](/pdf/sample_presentation.pdf)**_
 I am a driven Finance student with the aspirations of breaking into Investment Banking. 
 I have experience creating financial models, and have a comprehensive understanding of DCFs and LBOs. 
 My resume is attached below. 
-[Resume](images/
+[Resume](images/resume.pdf)
 
 ---
 
