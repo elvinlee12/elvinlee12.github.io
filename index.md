@@ -1,34 +1,38 @@
 ## About Me
 
-What's up? hey\|you
+Hello, I am a Finance Major at Lehigh, graduating May 2025. 
+I am from Los Angeles, CA, and I was born in Korea.
+My interests include sports, poker, and exercising.
 
-I am an awesome student at Lehigh, you should hire me!
 
 <!-- Upload your own photo and change the path -->
 
 <p style="text-align:center;">
-  <img class="img-circle" src="https://github.com/donbowen/donbowen.github.io/raw/master/images/logo.png" width="50%">
+  <img class="img-circle" src="images/headshot.png" width="50%">
 </p>
 
 ---
 
 ## Portfolio
 
-<!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
-
 _**[Sentiment Analysis on 10-Ks using NLP to understand stock prices](report/report.md)**_
 
-You can show off your midterm analysis by moving the report components and output into this file. Or...
+Used NLP to do a sentiment analysis on certain words by comparing to 2022 stock returns. 
+Focused on the sentiments of three topics: Macro-economic, growth, and risk.
+
+Below shows the scatter-plot of negative growth words relating to stock returns three days after the 10k release. 
 
 <img src="report/output_22_22.png?raw=true"/>
 
 ---
 
-_**[ML Practice](Regression_practice)**_
+_**[ML Practice](asgn-07_exercises/asgn-07_exercises.md)**_
 
-Or: The process that created this page can be used to show off your whole midterm analysis file, as is.
+Practice using ML methods, creating pipes, optimization, testing
 
-<img src="?raw=true"/>
+Below image shows optimization of alpha score in the Lasso Model. 
+
+<img src="asgn-07_exercises/output_11_1.png?raw=true"/>
 
 ---
 
@@ -46,9 +50,10 @@ _**[Some personal project](/pdf/sample_presentation.pdf)**_
 
 ## Career Objectives
 
-Write what you want. 
-
-Sell yourself!
+I am a driven Finance student with the aspirations of breaking into Investment Banking. 
+I have experience creating financial models, and have a comprehensive understanding of DCFs and LBOs. 
+My resume is attached below. 
+[Resume](images/
 
 ---
 
