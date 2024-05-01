@@ -39,7 +39,8 @@ Sklearn:
 - Ridge
 - RandomForestRegressor
 - GradientBoostingRegressor
-XGBOOST
+  
+XGBOOST:
 - XGBRegressor
 
 The below scatter plot shows the different types of models and how they performed on the train set. 
@@ -55,9 +56,47 @@ __In the competetion among my classmates, I placed first!__
 
 ---
 
-_**[Eventual team project](https://donbowen.github.io/teamproject/)**_
+_**[Swish Analytics](https://brandon4106.github.io/Fin_377_Swish_Insights/)**_
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+For our Final Project in Fin 377, our team (Brandon Smeltz, Michael Parker, and myself) worked to create a machine learning model to predict the correct points spread on a given NBA Team.
+
+We focused our research on the Boston Celtics during the 2023-2024 NBA season. Our training data was the data during the dates 11/01/23 - 02/29/24, and our testing data was the entire month of march. The test will be betting 100 either on the spread of the Celtics or their opponent for every game they played in March. 
+
+A custom scorer was implemented to maximize profits while looking at the odds given for each line: 
+
+```
+def custom_profit_score(y, y_pred, celtics_line, celtics_payout, opp_payout, bet=None):
+    if bet is None:
+        bet = np.ones(len(y))
+
+    if type(bet) in [int, float]:    
+        bet = np.ones(len(y)) * bet
+    
+    bet_on_celtics = y_pred > (celtics_line * -1)
+    celtics_win = y > (celtics_line * -1)
+    opponent_win = y < (celtics_line * -1)
+
+    payout = ((bet_on_celtics == celtics_win) * (((100/(celtics_payout*-1))*bet*(bet_on_celtics))+((100/(opp_payout*-1))*bet*(1-bet_on_celtics)))) + ((bet_on_celtics == celtics_win) * bet)
+
+    return(sum(payout) - sum(bet))
+```
+
+Our best model was created using the Ridge model, with feature selction (SelectKBest()).
+
+From this model, we optimized certain hyper parameters, with our best pipe being: 
+```
+best_pipe = Pipeline(
+    [
+        ('preproc',preproc_pipe),
+        ('feature_select',SelectKBest(k=8)),
+        ('clf',Ridge(alpha=2.682696))
+    ])
+```
+
+Next, this pipe was fit, and when tested on our holdout set, we found a profit of $500. 
+
+Below shows the predicted y value in comparison to the actual results:
+<img src="images/model_three.png?raw=true"/>
 
 ---
 
