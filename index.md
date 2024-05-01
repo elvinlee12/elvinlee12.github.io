@@ -2,10 +2,7 @@
 
 Hello, I am a Finance Major at Lehigh, graduating May 2025. 
 I am from Los Angeles, CA, and I was born in Korea.
-My interests include sports, poker, and exercising.
 
-
-<!-- Upload your own photo and change the path -->
 
 <p style="text-align:center;">
   <img class="img-circle" src="images/headshot.png" width="50%">
@@ -100,25 +97,18 @@ Below shows the predicted y value in comparison to the actual results:
 
 ---
 
-_**[Some personal project](/pdf/sample_presentation.pdf)**_
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
 ## Career Objectives
 
 I am a driven Finance student with the aspirations of breaking into Investment Banking. 
 I have experience creating financial models, and have a comprehensive understanding of DCFs and LBOs. 
-My resume is attached below. 
-[Resume](images/resume.pdf)
 
 ---
 
 ## Hobbies
 
-Maybe include a little about these, especially if they are the kinds of things that work well in interviews.
+Interests: Fantasy sports, Poker, Beach sports, Traveling
+Favorite Sports teams: San Francisco 49ers, Los Angeles Lakers
+
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
+
