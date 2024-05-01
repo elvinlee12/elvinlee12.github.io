@@ -26,13 +26,32 @@ Below shows the scatter-plot of negative growth words relating to stock returns 
 
 ---
 
-_**[ML Practice](asgn-07_exercises/asgn-07_exercises.md)**_
+_**[Prediction Contest](prediction_contest/modelcode.md)**_
 
-Practice using ML methods, creating pipes, optimization, testing
+The goal of this contest was to generate a model using that predicts the sale price of housing using various variables. The contest was then scored based on the r2 of the predicted sale price of the holdout set to the actual sale price. 
 
-Below image shows optimization of alpha score in the Lasso Model. 
+To begin, I started by testing several different ml models to determine which ones would be most optimal in creating a model for sale price. 
 
-<img src="asgn-07_exercises/output_11_1.png?raw=true"/>
+The tested modes were: 
+
+Sklearn:
+- Linear Regression
+- Ridge
+- RandomForestRegressor
+- GradientBoostingRegressor
+XGBOOST
+- XGBRegressor
+
+The below scatter plot shows the different types of models and how they performed on the train set. 
+
+<img src="prediction_contest/output_10_0.png?raw=true"/>
+
+
+From this, XGBoost and the GradientBoostingRegressors showed the best results. XGBoost is a type of gradient boosting, and I decided to use XGBoost due to its advanced nature. 
+
+Using XGBoost as my model, I was able to optomize certain hyperparameters, and achieved an r2 on the holdout set of ~0.88
+
+__In the competetion among my classmates, I placed first!__
 
 ---
 
